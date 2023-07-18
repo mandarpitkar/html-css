@@ -14,8 +14,13 @@
             border-collapse: collapse;
         }
 
+        thead {
+            background-color: gray;
+
+        }
+
         th {
-          background-color: gray;
+          
           border: 1px solid black;
           padding: 10px;
           text-align: center;
@@ -25,8 +30,8 @@
             border: 1px solid black;
             padding: 10px;
             text-align: center;
-
         }
+
     </style>
 </head>
 <body>
@@ -36,7 +41,7 @@
             <tr>
                 <th scope="col" rowspan="2">Area</th>
                 <th scope="col" rowspan="2">Disciplinas</th>
-                <th scope="col" colspan="2">Notas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
                 <th scope="col" rowspan="2">Media</th></tr>
             <tr>
                 <th>Nota 1</th>
@@ -47,7 +52,7 @@
         </thead>
         <tbody>
             <tr>
-                <td rowspan="4">Exatas</td>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
                 <td>Matematica</td>
                 <td>0</td>
                 <td>0</td>
@@ -72,11 +77,11 @@
                 <td>0</td>
             </tr>
             <tr>
-                <th scope="row" colspan="4" style="text-align: left;">Media de Extras</th>
-                <th>0</th>
+                <th scope="row" colspan="4" style="text-align: left; background-color: gray";>Media de Extras</th>
+                <td style="background-color: gray;">0</td>
             </tr>
             <tr>
-                <td rowspan="2">Humanas</td>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
                 <td>Historia</td>
                 <td>0</td>
                 <td>0</td>
@@ -89,8 +94,8 @@
                 <td>0</td>
             </tr>
             <tr>
-                <th scope="row" colspan="4" style="text-align: left;">Media de Humanas</th>
-                <th>0</th>
+                <th scope="row" colspan="4" style="text-align: left; background-color: gray">Media de Humanas</th>
+                <td style="background-color: gray;">0</td>
             </tr>
         </tbody>
     </table>
