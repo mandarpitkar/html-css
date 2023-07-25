@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*--Estilos para TELAS--*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header > h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+menu ul {
+    list-style-type: none;   
+    background-color: gray;    
+}
+
+menu li {
+    background-color: rgb(92, 91, 91);
+    display: inline-block;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: blue;
+    text-decoration: underline;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+
+
