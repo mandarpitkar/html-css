@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*--- Declaratio Gerais ---*/
+* {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html , body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121f83;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #121f83;
+    padding: 10px;
+}
+
+/*--- Declaration Retrato ---*/
+@media screen and (orientation: portrait) {
+    body  {
+background: url(../imagens/cev-portrait.jpg);  
+background-repeat: no-repeat; 
+background-position: center bottom;
+    } 
+    
+}
+
+/*--- Declaration Paisagem ---*/
+@media screen and (orientation: landscape) { 
+    body {    
+background: url(../imagens/cev-landscape.jpg);  
+background-repeat: no-repeat;
+background-position: left bottom;    
+    }   
+           
+}
